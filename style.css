@@ -1,0 +1,156 @@
+*{
+	margin:0;
+	padding:0; 
+}
+
+body{
+	background-color: #f2f2f2;
+	scroll-behavior: smooth;		
+}
+.container{
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 2.4rem;
+}
+
+.section1{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+}
+
+h1{
+	width: 100%;
+	text-align: center;
+	font-family: 'Cabin', sans-serif;
+	font-size: 3.6em;
+	color: #255784;
+	text-shadow: 8px 5px 10px black;
+	animation-name: heading;
+	animation-duration: 5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes heading{
+	0%{opacity: 0}
+	100%{opacity: 1}
+}
+
+h2{
+	display: block;
+	position: relative;
+	width: 100%;
+	margin-top:20px;
+	text-align:center; 
+	text-transform: uppercase;
+	color:#255784;
+	opacity: 0.7;
+	font-size:2.3em;
+	font-family:'Cabin', sans-serif;; 
+	text-shadow: 4px 4px 3px black;
+	animation-name: heading2;
+	animation-duration: 3s;
+}
+
+@keyframes heading2{
+	0%{left:-1000px}
+	100%{left: 0px}
+}
+
+.darkmode--activated h1,.darkmode--activated h2{
+	text-shadow: 4px 4px 3px #fff;
+}
+
+#input{
+	width: 50%;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	width: 40%;
+	border:none;
+	background: none;
+	font-size: 1.5em;
+	color: #000000;
+	padding: 8px;
+	border-bottom:1px solid #000;
+}
+#input:focus{
+	outline: none	;
+}
+
+::placeholder{
+	color: #9e9898;
+	opacity: 0.6;
+	font-family: cursive;
+	isolation: isolate;
+}
+button{
+	margin-top: 24px;
+	margin-left: 2em;
+	width: 120px;
+    height: 50px;
+    color:#2196f3;
+    border: 1px solid #2196f3; 
+    border-radius: 4px;
+    font-family: consolas;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 1.2em;
+    overflow: hidden;
+	transition: 0.2s;
+	isolation: isolate;
+
+}
+.darkmode--activated button{
+	background-color: black;
+}
+button:hover{
+	border:none; 
+	color:#255784;
+	background:#2196f3;
+	box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+}
+
+footer{
+	font-family: cursive;
+	font-size: .9em;
+	position: relative;
+	color:#919191;
+	bottom: 0;
+	right: 0;
+}
+
+.list{
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	margin:0 auto;
+	width: 60%;
+	box-shadow:0 0 1px #737373, 0 0 1px #737373, 0 0 1px #737373 ;
+};l
+
+ul{
+	margin: 20px;
+}
+
+ul li{
+	list-style: none;
+	font-size: 25px;
+	padding: 8px;
+}
+.border{
+	border-bottom:1px solid #919191;
+}
+#check{
+	position: relative;
+	margin-right: 9px;
+	margin-top: 3px;;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	border:2px solid #555;
+}
+.done{
+	text-decoration: line-through;
+}
